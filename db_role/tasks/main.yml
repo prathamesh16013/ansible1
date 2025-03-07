@@ -1,0 +1,11 @@
+---
+# tasks file for db_role
+- name: install mysql
+  apt:
+   name: mariadb-server
+   state: present
+- name: start mysql
+  service:
+    name: mariadb
+    state: started
+
